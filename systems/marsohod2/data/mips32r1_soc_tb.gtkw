@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*]
+[savefile] "mips32r1_soc_tb.gtkw"
+[timestart] 0
+*-21.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] mips32r1_soc_tb.
+[treeopen] mips32r1_soc_tb.soc.
+[sst_width] 210
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 214
+@28
+mips32r1_soc_tb.soc.wb_clk[0]
+mips32r1_soc_tb.soc.reset[0]
+@22
+mips32r1_soc_tb.soc.mips32r1_wb.MIPS32.Instruction[31:0]
+mips32r1_soc_tb.soc.mips32r1_wb.Handy_Instr_Address[31:0]
+mips32r1_soc_tb.soc.mips32r1_wb.ibus_bridge.wb_dat_i[31:0]
+mips32r1_soc_tb.soc.wb_intercon0.wb_mips32r1_d_adr_i[31:0]
+@28
+mips32r1_soc_tb.soc.wb_intercon0.wb_mips32r1_d_cyc_i[0]
+mips32r1_soc_tb.soc.wb_intercon0.wb_mips32r1_d_we_i[0]
+@22
+mips32r1_soc_tb.soc.wb_intercon0.wb_mips32r1_d_dat_i[31:0]
+mips32r1_soc_tb.soc.wb_intercon0.wb_mips32r1_d_dat_o[31:0]
+@29
+mips32r1_soc_tb.soc.uart_tx[0]
+[pattern_trace] 1
+[pattern_trace] 0

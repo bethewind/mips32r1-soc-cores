@@ -1,0 +1,25 @@
+CAPI=1
+[main]
+
+description = mips32r1 SoC for Marsohod2
+depend = mips32r1-soc
+
+simulators = icarus
+
+[verilog]
+src_files =
+  rtl/verilog/marsohod2.v
+  rtl/verilog/altpll/altpll0.v
+
+include_files =
+  sw/nmon.be.10MHz.9600.txt
+  data/mips32r1_soc_tb.gtkw
+
+tb_private_src_files =
+  bench/mips32r1_soc_tb.v
+
+[icarus]
+iverilog_options = -DPRESCALER_PRESET_HARD -DPRESCALER_HIGH_PRESET=0 -DPRESCALER_LOW_PRESET=2
+
+[simulator]
+toplevel = mips32r1_soc_tb

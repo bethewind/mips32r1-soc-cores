@@ -1,0 +1,14 @@
+SAPI=1
+[main]
+name = marsohod3
+description = mips32r1 SoC for marsohod3
+
+backend = quartus
+
+[quartus]
+family = "MAX 10"
+device = 10M50SAE144C8GES
+sdc_files = data/marsohod3.sdc
+tcl_files = data/pinmap.tcl
+            data/options.tcl
+top_module = marsohod3

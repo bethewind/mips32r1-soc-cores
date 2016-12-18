@@ -1,0 +1,35 @@
+CAPI=1
+[main]
+
+[verilog]
+src_files =
+ Hardware/src/MIPS32/Add.v
+ Hardware/src/MIPS32/ALU.v
+ Hardware/src/MIPS32/Compare.v
+ Hardware/src/MIPS32/Control.v
+ Hardware/src/MIPS32/CPZero.v
+ Hardware/src/MIPS32/Divide.v
+ Hardware/src/MIPS32/EXMEM_Stage.v
+ Hardware/src/MIPS32/Hazard_Detection.v
+ Hardware/src/MIPS32/IDEX_Stage.v
+ Hardware/src/MIPS32/IFID_Stage.v
+ Hardware/src/MIPS32/MemControl.v
+ Hardware/src/MIPS32/MEMWB_Stage.v
+ Hardware/src/MIPS32/Mux2.v
+ Hardware/src/MIPS32/Mux4.v
+ Hardware/src/MIPS32/Processor.v
+ Hardware/src/MIPS32/RegisterFile.v
+ Hardware/src/MIPS32/Register.v
+ Hardware/src/MIPS32/TrapDetect.v
+
+include_files =
+  Hardware/src/MIPS32/MIPS_Parameters.v
+
+[provider]
+#name = github
+#user = open-design
+#repo = mips32r1_soc_nano
+#version = 96631c1c3e304df9f320b14751acf999e2234f02
+
+name = git
+repo = file://localhost/home/antony/miet-edu-center/fusesoc/my-cores/mips32r1_soc_nano
